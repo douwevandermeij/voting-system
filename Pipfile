@@ -7,6 +7,8 @@ verify_ssl = true
 pytest = "*"
 
 [packages]
+fastapi = "*"
+uvicorn = "*"
 
 [requires]
 python_version = "3.8"
