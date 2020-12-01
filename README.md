@@ -9,15 +9,29 @@ Install:
 
     pipenv install --dev
 
+## CLI
+
 Run:
 
-    pipenv run uvicorn main:app --reload
+    pipenv run python main.py
 
 Or first start `pipenv shell` and just run:
 
-    uvicorn main:app --reload
+    python main.py
+
+## REST
+
+Run:
+
+    pipenv run uvicorn app.main:app --reload
+
+Or first start `pipenv shell` and just run:
+
+    uvicorn app.main:app --reload
 
 Now go to http://localhost:8000/docs to play with the API.
+
+## Tests
 
 Run tests (in `pipenv shell`:
 
