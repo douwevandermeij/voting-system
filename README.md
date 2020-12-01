@@ -33,6 +33,6 @@ Now go to http://localhost:8000/docs to play with the API.
 
 ## Tests
 
-Run tests (in `pipenv shell`:
+Run tests (in `pipenv shell`):
 
     pytest
