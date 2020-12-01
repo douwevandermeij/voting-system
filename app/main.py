@@ -8,11 +8,11 @@ app = FastAPI()
 vote_repository = InMemoryVoteRepository()
 
 
-@app.post("/vote")
+@app.post("/vote", response_model=Vote)
 def vote() -> Vote:
     return Vote().save(vote_repository)
 
 
-@app.get("/votes")
+@app.get("/votes", response_model=int)
 def votes() -> int:
     return vote_repository.total()
